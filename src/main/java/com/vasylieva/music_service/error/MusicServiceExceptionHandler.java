@@ -8,8 +8,6 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.google.common.base.Throwables;
-
 /**
  * General error handler for the application.
  */
@@ -23,7 +21,7 @@ public class MusicServiceExceptionHandler {
 	@ExceptionHandler(value = Exception.class)
 	public ResponseEntity<ErrorResponseModel> exception(Exception exception, WebRequest request) {
 		ModelAndView modelAndView = new ModelAndView("error/general");
-		modelAndView.addObject("errorMessage", Throwables.getRootCause(exception));
+		modelAndView.addObject("errorMessage", exception.getMessage());
 		return new ResponseEntity<ErrorResponseModel>(new ErrorResponseModel(), HttpStatus.BAD_REQUEST);
 	}
 }
