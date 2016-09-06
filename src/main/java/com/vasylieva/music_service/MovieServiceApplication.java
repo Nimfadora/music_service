@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Created by Valeria_Vasylieva on 9/5/2016.
  */
 @SpringBootApplication
-public class MusicServiceApplication {
+public class MovieServiceApplication {
     public static void main(final String[] args) {
-        SpringApplication.run(MusicServiceApplication.class, args);
+        SpringApplication.run(MovieServiceApplication.class, args);
     }
 }
