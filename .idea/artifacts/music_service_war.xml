@@ -1,7 +1,7 @@
 <component name="ArtifactManager">
   <artifact type="war" name="music-service:war">
     <output-path>$PROJECT_DIR$/target</output-path>
-    <root id="archive" name="music-service-1.0-SNAPSHOT.war">
+    <root id="archive" name="music_service-1.0-SNAPSHOT.war">
       <element id="artifact" artifact-name="music-service:war exploded" />
     </root>
   </artifact>
