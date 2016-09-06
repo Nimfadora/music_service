@@ -23,7 +23,9 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java-version>1.8</java-version>
+        <java.version>1.8</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
         <spring.version>4.3.2.RELEASE</spring.version>
         <h2database.version>1.4.191</h2database.version>
         <jackson-datatype.version>2.6.1</jackson-datatype.version>
