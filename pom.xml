@@ -10,7 +10,7 @@
     <version>1.0-SNAPSHOT</version>
 
 
-    <title>music_service</title>
+    <name>music_service</name>
     <description>REST API for music service</description>
 
 
